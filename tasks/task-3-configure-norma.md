@@ -1,0 +1,39 @@
+# Task 3. Configure Norma
+
+**13 minutes.** Wire real coding standards into the agent over MCP, then check the file it just wrote.
+
+Your five rules in Task 2 were yours. They are also unenforced: nothing checks that the agent followed them. This task puts a real ruleset inside the agent's own turn.
+
+## What you do
+
+1. Add the Norma MCP server to your tool. Config for each tool is in [`examples/mcp-config.md`](../examples/mcp-config.md).
+
+   Endpoint: `https://api.qualityclouds.ai/mcp`
+
+2. Restart your tool. It will open a browser window to authorize over OAuth. There is no API key to paste.
+
+3. Link this repository:
+
+   ```
+   Link this repository to my Norma workspace.
+   ```
+
+4. Pull the rulesets and read what they actually enforce:
+
+   ```
+   List the Norma rulesets that apply here, and show me the rules in the one for JavaScript.
+   ```
+
+   Read them. This is the part people skip, and it is the part that tells you whether the standard is any good.
+
+5. Run a live check on the file the agent changed in Task 2:
+
+   ```
+   Run a Norma live check on src/handlers.js.
+   ```
+
+## Checkpoint
+
+You should get findings back with the rule that fired, the line, and why it matters. If you get nothing at all, the file probably was not saved, or the repository is not linked.
+
+**From here the agent checks against real rules, not the ones we invented in Task 2.**

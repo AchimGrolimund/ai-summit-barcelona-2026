@@ -1,0 +1,12 @@
+{
+  "name": "ai-summit-barcelona-2026",
+  "version": "1.0.0",
+  "description": "Workshop demo service. When code is cheap, governance is the hard part.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "license": "MIT",
+  "private": true
+}
