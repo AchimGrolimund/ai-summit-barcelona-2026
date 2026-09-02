@@ -24,8 +24,20 @@ No install step. The demo service has zero dependencies and runs on Node alone, 
 Then:
 
 1. Open the folder in your AI coding tool.
-2. Create a free Norma workspace at [norma.qualityclouds.com](https://norma.qualityclouds.com). No card needed.
+2. Create your free Norma account, if you have not already. [Steps below](#create-your-norma-account), two minutes.
 3. Leave a browser window open. Norma's MCP server authorizes over OAuth in Task 3.
+
+## Create your Norma account
+
+Do this before you travel if you can. It takes two minutes, it needs working wifi, and it is the one prerequisite that is awkward to fix from your seat.
+
+1. Go to [norma.qualityclouds.com](https://norma.qualityclouds.com) and click **Sign up**.
+2. Sign up with GitHub or Bitbucket in one click. That shares your profile and repository metadata, and your code is never stored. If you would rather not connect an account, use the email form: first name, last name, email, password.
+3. That is it. No credit card, and Norma needs no repository access to create the account.
+
+The free plan is permanent, not a trial, and it covers everything this workshop asks of it.
+
+**Signing up on the day?** Do it during Task 0, while there is slack in the schedule. Task 3 assumes you already have an account and a browser you are logged into.
 
 ## What you need
 

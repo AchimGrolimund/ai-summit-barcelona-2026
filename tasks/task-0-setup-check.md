@@ -27,6 +27,8 @@
    Where are the tests?
    ```
 
+4. If you do not have a Norma account yet, create one now at [norma.qualityclouds.com](https://norma.qualityclouds.com). GitHub, Bitbucket, or email, no credit card. Task 3 assumes you are already logged in, so do not leave it until then.
+
 ## Checkpoint
 
 Your agent should answer from the files, not from a guess. It should also tell you there are no tests, because there are none. If it invents some, that is your first finding of the day.
