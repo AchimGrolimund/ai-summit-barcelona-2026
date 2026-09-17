@@ -47,3 +47,7 @@
 Your agent should answer from the files, not from a guess. It should also tell you there are no tests, because there are none. If it invents some, that is your first finding of the day.
 
 **If your agent cannot read files, raise a hand now.** Not in ten minutes.
+
+---
+
+[← Start here](../README.md#start-here-before-the-session-begins) · [All tasks](../README.md#the-tasks) · [Task 1. The naked loop →](task-1-naked-loop.md)

@@ -47,3 +47,7 @@
 Watch for a fix that games the rule instead of meeting it: a suppression comment, a renamed variable, a check that returns early so the rule never fires. Call it out. An agent optimizing for a green result is a real failure mode and it is worth seeing once, deliberately, in a room where it costs nothing.
 
 **What changed:** review now starts from what was checked and what failed, instead of from the whole diff.
+
+---
+
+[← Task 3. Configure Norma](task-3-configure-norma.md) · [All tasks](../README.md#the-tasks) · [Task 5. Package it as a skill →](task-5-package-a-skill.md)

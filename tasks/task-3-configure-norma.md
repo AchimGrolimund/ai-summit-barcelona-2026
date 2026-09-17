@@ -49,3 +49,7 @@ What Norma tools do you have available?
 No tools listed means the MCP server is not connected. Go back to step 1.
 
 **From here the agent checks against real rules, not the ones we invented in Task 2.**
+
+---
+
+[← Task 2. The context layer](task-2-context-layer.md) · [All tasks](../README.md#the-tasks) · [Task 4. Close the loop →](task-4-close-the-loop.md)

@@ -62,3 +62,7 @@ Right now the loop lives in your head and in the sentence you typed. That does n
 The repository now carries the loop. Anyone who clones it, including an agent nobody told you about, inherits the same standard.
 
 **A skill is how a habit survives the person who invented it.**
+
+---
+
+[← Task 4. Close the loop](task-4-close-the-loop.md) · [All tasks](../README.md#the-tasks) · [After the workshop →](../README.md#after-the-workshop)

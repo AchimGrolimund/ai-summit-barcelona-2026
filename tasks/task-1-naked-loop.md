@@ -39,3 +39,7 @@ Look for what the agent decided on your behalf without being asked:
 Ask yourself the real question: **would you put your name on this in a change review?**
 
 That commit is your baseline. You compare against it in Task 2.
+
+---
+
+[← Task 0. Setup check](task-0-setup-check.md) · [All tasks](../README.md#the-tasks) · [Task 2. The context layer →](task-2-context-layer.md)

@@ -63,3 +63,7 @@
 The second result should differ in ways you can point at and name. If it does not, your five rules were too vague. Rewrite one of them to be specific enough that a machine could check it, and run the prompt a third time, in another new chat.
 
 **Five short lines of context do more than a long prompt.**
+
+---
+
+[← Task 1. The naked loop](task-1-naked-loop.md) · [All tasks](../README.md#the-tasks) · [Task 3. Configure Norma →](task-3-configure-norma.md)
