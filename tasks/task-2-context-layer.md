@@ -25,10 +25,26 @@
 
    There is a working example in [`examples/AGENTS.md`](../examples/AGENTS.md). Copy it and change it, or write your own.
 
-4. Run the **exact same prompt** again.
+4. **Start a new chat**, then run the exact same prompt again.
+
+   This step is not optional. Your agent still has Task 1 in its context: ask it in the same conversation and it will remember what it already wrote, and you will be measuring its memory instead of your context file.
+
+   | Tool | How |
+   |---|---|
+   | Claude Code | `/clear` |
+   | Cursor, Codex, Windsurf | New chat, or new conversation |
+   | Anything else | Whatever starts a fresh session |
+
+   Then, in the clean session:
 
    ```
    Add an endpoint that lets a user update the title of an existing task.
+   ```
+
+   If your tool has no way to start a clean session, put this line in front of the prompt instead. It is weaker than a new chat, so use it only as a fallback:
+
+   ```
+   Ignore everything earlier in this conversation. Read the repository as it is now and do this:
    ```
 
 5. Commit the second attempt, then diff the two.
@@ -44,6 +60,6 @@
 
 ## Checkpoint
 
-The second result should differ in ways you can point at and name. If it does not, your five rules were too vague. Rewrite one of them to be specific enough that a machine could check it, and run the prompt a third time.
+The second result should differ in ways you can point at and name. If it does not, your five rules were too vague. Rewrite one of them to be specific enough that a machine could check it, and run the prompt a third time, in another new chat.
 
 **Five short lines of context do more than a long prompt.**
