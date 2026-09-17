@@ -4,7 +4,15 @@
 
 ## What you do
 
-1. Create a context file in the repository root. The name depends on your tool:
+1. Put the code back to where it started, without losing Task 1.
+
+   ```bash
+   git revert --no-edit task-1
+   ```
+
+   This undoes the Task 1 code and records the undo, so the `task-1` commit is still there to compare against. You are back to the service as you found it.
+
+2. Create a context file in the repository root. The name depends on your tool:
 
    | Tool | File |
    |---|---|
@@ -13,17 +21,9 @@
    | Codex | `AGENTS.md` |
    | Most others | `AGENTS.md` |
 
-2. Write five rules your team actually holds. Not aspirations, rules you would enforce in a review.
+3. Write five rules your team actually holds. Not aspirations, rules you would enforce in a review.
 
    There is a working example in [`examples/AGENTS.md`](../examples/AGENTS.md). Copy it and change it, or write your own.
-
-3. Put the code back to where it started, without losing Task 1.
-
-   ```bash
-   git revert --no-edit task-1
-   ```
-
-   This undoes the Task 1 code and records the undo, so the `task-1` commit is still there to compare against. Your new context file is untracked, so the revert leaves it alone.
 
 4. Run the **exact same prompt** again.
 
