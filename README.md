@@ -11,21 +11,48 @@ This repository is the workshop. Everything you need is here: the demo service y
 
 ## Start here, before the session begins
 
-If you are reading this in the room, do these four steps now. You will be typing by 10:05.
+If you are reading this in the room, do these four steps now, in this order. You will be typing by 10:05.
+
+### 1. Fork this repository
+
+Go to [github.com/qualityclouds/ai-summit-barcelona-2026](https://github.com/qualityclouds/ai-summit-barcelona-2026) and click **Fork**.
+
+**Leave "Copy the DEFAULT branch only" unchecked.** Tasks 3, 4 and 5 each have a catch-up branch that lets you rejoin if you fall behind, and ticking that box leaves all of them out of your fork.
+
+You now have your own copy at `github.com/YOUR-USERNAME/ai-summit-barcelona-2026`. Everything you write today is yours to keep.
+
+### 2. Clone your fork
+
+Your fork, not this one. Swap in your own username:
 
 ```bash
-git clone https://github.com/qualityclouds/ai-summit-barcelona-2026.git
+git clone https://github.com/YOUR-USERNAME/ai-summit-barcelona-2026.git
 cd ai-summit-barcelona-2026
 node src/server.js
 ```
 
 No install step. The demo service has zero dependencies and runs on Node alone, so conference wifi cannot break your setup.
 
-Then:
+Do not add an `upstream` remote. You never need one today, and it breaks `git switch` on the catch-up branches.
 
-1. Open the folder in your AI coding tool.
-2. Create your free Norma account, if you have not already. [Steps below](#create-your-norma-account), two minutes.
-3. Leave a browser window open. Norma's MCP server authorizes over OAuth in Task 3.
+<details>
+<summary>Prefer the <code>gh</code> CLI?</summary>
+
+```bash
+gh repo fork qualityclouds/ai-summit-barcelona-2026 --clone
+cd ai-summit-barcelona-2026
+git config checkout.defaultRemote origin
+```
+
+`gh` copies every branch and adds an `upstream` remote for you. That third line is what stops the extra remote from making the catch-up branch names ambiguous.
+
+</details>
+
+### 3. Open the folder in your AI coding tool
+
+### 4. Create your free Norma account
+
+If you have not already. [Steps below](#create-your-norma-account), two minutes. Leave the browser window open: Norma's MCP server authorizes over OAuth in Task 3.
 
 ## Create your Norma account
 
@@ -51,7 +78,7 @@ If your tool has no MCP support, pair up with someone whose does. Tasks 0 to 2 w
 
 ## What you leave with
 
-A working repository, the configuration that made it work, and a reusable skill you can drop into your own projects on Monday.
+A working repository in your own GitHub account, the configuration that made it work, and a reusable skill you can drop into your own projects on Monday.
 
 ---
 
@@ -85,6 +112,11 @@ git switch task-5-start   # the repository at the end of Task 4
 ```
 
 Your own work stays on `main`, and `git switch main` brings you back to it.
+
+Two things that can go wrong:
+
+- **`invalid reference: task-3-start`** means your fork copied only the main branch. Fork it again with **"Copy the DEFAULT branch only" unchecked**.
+- **`matched multiple (2) remote tracking branches`** means you added a second remote. Be explicit about which one you want: `git switch --track origin/task-3-start`.
 
 ## Copy-paste examples
 

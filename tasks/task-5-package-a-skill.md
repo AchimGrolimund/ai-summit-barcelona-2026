@@ -45,7 +45,17 @@ Right now the loop lives in your head and in the sentence you typed. That does n
    git log --oneline
    ```
 
-   Five commits, in order, each one a decision you can point at. That is the artifact you take home.
+   Five commits, in order, each one a decision you can point at.
+
+6. Push it to your fork, so it outlives the room.
+
+   ```bash
+   git push origin HEAD
+   ```
+
+   `HEAD` just means "the branch I am on", so this works whether you stayed on `main` or picked up a catch-up branch along the way.
+
+   Your work is now at `github.com/YOUR-USERNAME/ai-summit-barcelona-2026`. That is the repository to point Norma at on Monday.
 
 ## Checkpoint
 
