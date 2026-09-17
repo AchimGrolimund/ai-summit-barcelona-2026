@@ -1,2 +1,7 @@
 .DS_Store
 node_modules/
+
+# A clone made inside this folder, e.g. by running the README clone command
+# from within the repository. Keeps `git add -A` in Task 1 from committing it
+# as a gitlink.
+ai-summit-barcelona-2026/
