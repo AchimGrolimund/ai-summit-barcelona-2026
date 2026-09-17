@@ -4,6 +4,14 @@
 
 Right now the loop lives in your head and in the sentence you typed. That does not survive you.
 
+> **Behind after Task 4?** Commit or stash anything you want to keep, then:
+>
+> ```bash
+> git switch task-5-start
+> ```
+>
+> Context file, update endpoint and delete endpoint, all checked and clean.
+
 ## What you do
 
 1. Create a skill file. Where it goes depends on your tool:
@@ -27,9 +35,17 @@ Right now the loop lives in your head and in the sentence you typed. That does n
 4. Commit it.
 
    ```bash
-   git add .
-   git commit -m "Add check-and-fix skill and context file"
+   git add -A
+   git commit -m "task 5: add check-and-fix skill"
    ```
+
+5. Look back at what you built, in one command:
+
+   ```bash
+   git log --oneline
+   ```
+
+   Five commits, in order, each one a decision you can point at. That is the artifact you take home.
 
 ## Checkpoint
 

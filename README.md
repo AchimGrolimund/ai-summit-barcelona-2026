@@ -68,6 +68,24 @@ Work through them in order. Each one takes the time listed and stands alone, so 
 | 4 | [Close the loop](tasks/task-4-close-the-loop.md) | 12 min |
 | 5 | [Package it as a skill](tasks/task-5-package-a-skill.md) | 10 min |
 
+### Commit as you go
+
+Each task ends with a commit. It takes five seconds and it is what makes the comparison in Task 2 possible: you diff Task 1's answer against Task 2's answer directly, instead of trying to remember what the first one looked like.
+
+You stay on `main` the whole time. No branch switching, nothing to lose when your agent leaves the working tree dirty.
+
+### If you fall behind
+
+Tasks 3, 4 and 5 each have a branch holding the finished state of the task before it. Commit or stash anything you want to keep, then switch:
+
+```bash
+git switch task-3-start   # the repository at the end of Task 2
+git switch task-4-start   # same state: Task 3 changes no code
+git switch task-5-start   # the repository at the end of Task 4
+```
+
+Your own work stays on `main`, and `git switch main` brings you back to it.
+
 ## Copy-paste examples
 
 Everything the tasks ask you to write, already written:

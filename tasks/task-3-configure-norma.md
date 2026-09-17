@@ -4,6 +4,14 @@
 
 Your five rules in Task 2 were yours. They are also unenforced: nothing checks that the agent followed them. This task puts a real ruleset inside the agent's own turn.
 
+> **Behind after Task 2?** Commit or stash anything you want to keep, then jump to a finished Task 2:
+>
+> ```bash
+> git switch task-3-start
+> ```
+>
+> Context file in place, update endpoint written. Your own work stays on `main`.
+
 ## What you do
 
 1. Add the Norma MCP server to your tool. Config for each tool is in [`examples/mcp-config.md`](../examples/mcp-config.md).

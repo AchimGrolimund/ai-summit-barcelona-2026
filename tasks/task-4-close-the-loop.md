@@ -2,6 +2,14 @@
 
 **12 minutes.** Hand the violations back to the agent and let it fix its own work. This is the whole idea in one step.
 
+> **Still fighting OAuth?** Commit or stash anything you want to keep, then:
+>
+> ```bash
+> git switch task-4-start
+> ```
+>
+> Task 3 changes no code, so this is the same state as `task-3-start`. You still need the MCP server connected to do this task: grab a mentor.
+
 ## What you do
 
 1. Give the agent the check results:
@@ -25,6 +33,13 @@
    Add an endpoint that deletes a task.
    Before you show me the result, run a Norma live check on the files you changed,
    fix every violation, and re-check until it passes.
+   ```
+
+5. Commit the clean version.
+
+   ```bash
+   git add -A
+   git commit -m "task 4: checked and fixed"
    ```
 
 ## Checkpoint

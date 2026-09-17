@@ -17,13 +17,30 @@
 
    There is a working example in [`examples/AGENTS.md`](../examples/AGENTS.md). Copy it and change it, or write your own.
 
-3. Undo the change from Task 1 (`git checkout .`), then run the **exact same prompt** again.
+3. Put the code back to where it started, without losing Task 1.
+
+   ```bash
+   git revert --no-edit task-1
+   ```
+
+   This undoes the Task 1 code and records the undo, so the `task-1` commit is still there to compare against. Your new context file is untracked, so the revert leaves it alone.
+
+4. Run the **exact same prompt** again.
 
    ```
    Add an endpoint that lets a user update the title of an existing task.
    ```
 
-4. Diff the two results side by side.
+5. Commit the second attempt, then diff the two.
+
+   ```bash
+   git add -A
+   git commit -m "task 2: with context"
+   git tag task-2
+   git diff task-1 task-2 -- src/
+   ```
+
+   That diff is Task 1's answer on the left and Task 2's on the right. Nothing else.
 
 ## Checkpoint
 
