@@ -20,13 +20,7 @@ Your five rules in Task 2 were yours. They are also unenforced: nothing checks t
 
 2. Restart your tool. It will open a browser window to authorize over OAuth. There is no API key to paste.
 
-3. Link this repository:
-
-   ```
-   Link this repository to my Norma workspace.
-   ```
-
-4. Pull the rulesets and read what they actually enforce:
+3. Pull the rulesets and read what they actually enforce:
 
    ```
    List the Norma rulesets that apply here, and show me the rules in the one for JavaScript.
@@ -34,14 +28,24 @@ Your five rules in Task 2 were yours. They are also unenforced: nothing checks t
 
    Read them. This is the part people skip, and it is the part that tells you whether the standard is any good.
 
-5. Run a live check on the file the agent changed in Task 2:
+4. Run a live check on the file the agent changed in Task 2:
 
    ```
    Run a Norma live check on src/handlers.js.
    ```
 
+**You do not need to link a repository for any of this.** Rulesets and live checks work on their own. Linking is for pointing Norma at a repository you own, which is a thing to do after the workshop, not during it.
+
 ## Checkpoint
 
-You should get findings back with the rule that fired, the line, and why it matters. If you get nothing at all, the file probably was not saved, or the repository is not linked.
+You should get findings back with the rule that fired, the line, and why it matters.
+
+If you get nothing at all, the file was probably not saved, or your tool never finished authorizing. Ask it:
+
+```
+What Norma tools do you have available?
+```
+
+No tools listed means the MCP server is not connected. Go back to step 1.
 
 **From here the agent checks against real rules, not the ones we invented in Task 2.**
