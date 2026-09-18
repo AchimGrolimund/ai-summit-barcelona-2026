@@ -21,7 +21,7 @@ You now have your own copy at `github.com/YOUR-USERNAME/ai-summit-barcelona-2026
 
 ### 2. Clone your fork
 
-Your fork, not this one. Swap in your own username:
+Swap in your own username. If the URL still says `qualityclouds`, you are cloning the wrong repository:
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/ai-summit-barcelona-2026.git
