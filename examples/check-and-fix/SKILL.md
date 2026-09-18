@@ -17,11 +17,17 @@ Close the loop on your own work. Do this before you present a change, not after.
 6. Repeat from step 3 until the check comes back clean, or until you have tried twice on the same finding.
 7. Register the outcome. Record the rules you verified, the violations you fixed, and any you avoided while writing the code. Report your model name and version exactly as you reported them on the live check, so that one model does not land in the record as two.
 
-## About step 7
+## The record
 
 The check tells you what is wrong. The record is what says the check happened at all: an append-only trail of what was verified, what failed, what you did about it, and which model did the work. A green check you cannot evidence is worth very little a month later, when someone asks who approved this.
 
-It binds to a repository, so until one is linked to your Norma workspace it answers `unlinked`, or `remote_not_matched` if the remote belongs to nobody in your organization. That is the expected answer on a repository you forked from someone else. Do not treat it as a broken step and do not work around it: say which answer you got, and carry on.
+It refers to rules by id. A violation you fixed carries its id in the finding, but a rule you verified and did not break has an id only the ruleset knows, so pull this repository's rulesets and read their rules once, before the first record you write.
+
+It binds to a repository, so until one is linked to your Norma workspace it answers `unlinked`, or `remote_not_matched` if the remote belongs to nobody in your organization. Do not treat it as a broken step and do not work around it: say which answer you got, and carry on.
+
+## If the check cannot run
+
+If you have no Norma tools available, say so in one line and stop. Do not read the rules yourself and call that a check, and do not report a clean result you did not get: a check that did not happen is not a pass. If the tools are there but no ruleset covers this stack, say that instead, and say which languages the repository is actually in.
 
 ## When you cannot fix something
 
