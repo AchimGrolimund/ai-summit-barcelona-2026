@@ -152,7 +152,7 @@ curl -X POST http://localhost:3000/tasks -d '{"title":"write the talk"}'
   Link this repository to my Norma workspace.
   ```
 
-  Linking resolves your git remote against the repositories in your Norma organization, so it works on your own repositories, not on a clone of someone else's.
+  Linking resolves your git remote against the repositories in your Norma organization, so it works on your own repositories, not on a clone of someone else's. It is also what makes step 7 of the skill work: the audit record binds to a repository, so it has nothing to bind to until you link one.
 - The Norma GitHub App reviews pull requests, so code that never went through an agent loop still gets checked: [github.com/apps/norma-by-quality-clouds](https://github.com/apps/norma-by-quality-clouds)
 - Norma MCP endpoint, if you are wiring it up yourself: `https://api.qualityclouds.ai/mcp`
 
