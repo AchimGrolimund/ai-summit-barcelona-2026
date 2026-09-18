@@ -2,7 +2,7 @@
 
 **5 minutes.** Prove your tool can see the repository before we build anything on top of it.
 
-Setup itself lives in the README: [fork, clone, open, Norma account](../README.md#start-here-before-the-session-begins). Four steps, two minutes. If you have not done them, do them now and come straight back.
+Setup itself lives in the README: [fork, clone, open, Norma account](../README.md#start-here-before-the-session-begins). Four steps. If you have not done them, do them now and come straight back.
 
 ## What you do
 
@@ -20,6 +20,8 @@ Setup itself lives in the README: [fork, clone, open, Norma account](../README.m
    ```bash
    curl http://localhost:3000/tasks
    ```
+
+   Nothing back? It is not running. Start it with `node src/server.js` from the repository folder and leave that terminal alone.
 
 3. With the folder open in your AI coding tool, ask it two questions:
 

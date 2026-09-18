@@ -26,11 +26,15 @@ Right now the loop lives in your head and in the sentence you typed. That does n
 
 2. Give it a clear trigger and numbered steps. The trigger matters more than the prose: it decides whether the skill ever fires.
 
+   > **Already running a lot of skills?** Put this one in the repository, not in your personal skills folder: project skills travel with the clone, which is the whole point of the task. With a dozen others loaded the description does the deciding, so write it to say *when* to fire, not what the skill is. And if you already have something called `check-and-fix`, rename this one before the two collide.
+
 3. Invoke it on a fresh change:
 
    ```
    Add pagination to the GET /tasks endpoint, then run check-and-fix.
    ```
+
+   Naming the skill proves the steps work. Whether it fires on its own is a different question: ask again in a new chat without naming it, and watch whether the check still runs. If it does not, the description is what to fix, not the steps.
 
 4. Commit it.
 
@@ -42,10 +46,10 @@ Right now the loop lives in your head and in the sentence you typed. That does n
 5. Look back at what you built, in one command:
 
    ```bash
-   git log --oneline
+   git log --oneline -5
    ```
 
-   Five commits, in order, each one a decision you can point at.
+   Your five commits, newest first, each one a decision you can point at. Drop the `-5` and the workshop's own history sits underneath them.
 
 6. Push it to your fork, so it outlives the room.
 

@@ -95,9 +95,9 @@ Work through them in order. Each one takes the time listed and stands alone, so 
 
 ### Commit as you go
 
-Each task ends with a commit. It takes five seconds and it is what makes the comparison in Task 2 possible: you diff Task 1's answer against Task 2's answer directly, instead of trying to remember what the first one looked like.
+Tasks 1, 2, 4 and 5 end with a commit. It takes five seconds and it is what makes the comparison in Task 2 possible: you diff Task 1's answer against Task 2's answer directly, instead of trying to remember what the first one looked like.
 
-You stay on `main` the whole time. No branch switching, nothing to lose when your agent leaves the working tree dirty.
+You stay on `main` unless you fall behind and pick up a catch-up branch. Nothing to lose when your agent leaves the working tree dirty.
 
 ### If you fall behind
 
@@ -145,7 +145,7 @@ curl -X POST http://localhost:3000/tasks -d '{"title":"write the talk"}'
 
 ## After the workshop
 
-- Norma has a permanent free tier with one certificate a month. Point it at your own repository: [norma.qualityclouds.com](https://norma.qualityclouds.com)
+- Norma's free tier is permanent, not a trial: one certificate a month, and [the plans](https://qualityclouds.ai/pricing/norma) are there if you outgrow it. Point it at your own repository: [norma.qualityclouds.com](https://norma.qualityclouds.com)
 - Once you are in a repository you own, link it so checks and findings are attributed to it. Ask your agent:
 
   ```
