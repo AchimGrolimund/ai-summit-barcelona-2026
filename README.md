@@ -15,9 +15,7 @@ If you are reading this in the room, do these four steps now, in this order. You
 
 ### 1. Fork this repository
 
-Go to [github.com/qualityclouds/ai-summit-barcelona-2026](https://github.com/qualityclouds/ai-summit-barcelona-2026) and click **Fork**.
-
-**Leave "Copy the DEFAULT branch only" unchecked.** Tasks 3, 4 and 5 each have a catch-up branch that lets you rejoin if you fall behind, and ticking that box leaves all of them out of your fork.
+Go to [github.com/qualityclouds/ai-summit-barcelona-2026](https://github.com/qualityclouds/ai-summit-barcelona-2026) and click **Fork**. **Leave "Copy the DEFAULT branch only" unchecked.** Tasks 3, 4 and 5 each have a catch-up branch that lets you rejoin if you fall behind, and ticking that box leaves all of them out of your fork.
 
 You now have your own copy at `github.com/YOUR-USERNAME/ai-summit-barcelona-2026`. Everything you write today is yours to keep.
 
