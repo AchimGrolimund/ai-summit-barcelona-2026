@@ -9,7 +9,7 @@ Setup itself lives in the README: [fork, clone, open, Norma account](../README.m
 1. Check you are working in your own fork, and that the branches came with it:
 
    ```bash
-   git remote get-url origin   # should say YOUR-USERNAME, not AchimGrolimund
+   git remote get-url origin   # should say YOUR-USERNAME, not qualityclouds
    git branch -r               # should list task-3-start, task-4-start, task-5-start
    ```
 
