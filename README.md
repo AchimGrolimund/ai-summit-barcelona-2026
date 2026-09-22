@@ -15,13 +15,13 @@ If you are reading this in the room, do these four steps now, in this order. You
 
 ### 1. Fork this repository
 
-Go to [github.com/qualityclouds/ai-summit-barcelona-2026](https://github.com/qualityclouds/ai-summit-barcelona-2026) and click **Fork**. **Leave "Copy the DEFAULT branch only" unchecked.** Tasks 3, 4 and 5 each have a catch-up branch that lets you rejoin if you fall behind, and ticking that box leaves all of them out of your fork.
+Go to [github.com/AchimGrolimund/ai-summit-barcelona-2026](https://github.com/AchimGrolimund/ai-summit-barcelona-2026) and click **Fork**. **Leave "Copy the DEFAULT branch only" unchecked.** Tasks 3, 4 and 5 each have a catch-up branch that lets you rejoin if you fall behind, and ticking that box leaves all of them out of your fork.
 
 You now have your own copy at `github.com/YOUR-USERNAME/ai-summit-barcelona-2026`. Everything you write today is yours to keep.
 
 ### 2. Clone your fork
 
-Swap in your own username. If the URL still says `qualityclouds`, you are cloning the wrong repository:
+Swap in your own username. If the URL still says `AchimGrolimund`, you are cloning the wrong repository:
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/ai-summit-barcelona-2026.git
@@ -37,7 +37,7 @@ Do not add an `upstream` remote. You never need one today, and it breaks `git sw
 <summary>Prefer the <code>gh</code> CLI?</summary>
 
 ```bash
-gh repo fork qualityclouds/ai-summit-barcelona-2026 --clone
+gh repo fork AchimGrolimund/ai-summit-barcelona-2026 --clone
 cd ai-summit-barcelona-2026
 git config checkout.defaultRemote origin
 ```
