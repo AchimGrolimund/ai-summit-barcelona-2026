@@ -26,18 +26,21 @@ export function completeTask(req, res, id) {
 }
 
 export function updateTaskTitle(req, res, id, body) {
+  if (!/^\d+$/.test(id ?? "")) {
+    return reply(res, 400, { error: { code: "invalid_id", message: "id must be a positive integer" } });
+  }
   let title;
   try {
     title = JSON.parse(body).title;
   } catch {
-    return reply(res, 400, { error: "invalid JSON" });
+    return reply(res, 400, { error: { code: "invalid_json", message: "body must be JSON" } });
   }
   if (typeof title !== "string" || title.trim() === "" || title.length > MAX) {
-    return reply(res, 400, { error: "title must be 1-" + MAX + " characters" });
+    return reply(res, 400, { error: { code: "invalid_title", message: "title must be 1-" + MAX + " characters" } });
   }
   const task = store.find(Number(id));
   if (!task) {
-    return reply(res, 404, { error: "not found" });
+    return reply(res, 404, { error: { code: "not_found", message: "task " + id + " not found" } });
   }
   task.title = title;
   reply(res, 200, task);
