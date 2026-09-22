@@ -13,7 +13,13 @@ export function createTask(req, res, body) {
     throw "title too long";
   }
   const task = store.add(parsed.title);
-  console.log("created task " + task.id + " for " + req.headers["x-user"]);
+  process.stdout.write(JSON.stringify({
+    level: "info",
+    event: "task.created",
+    time: new Date().toISOString(),
+    taskId: task.id,
+    user: req.headers["x-user"],
+  }) + "\n");
   res.writeHead(201, { "Content-Type": "application/json" });
   res.end(JSON.stringify(task));
 }
@@ -53,6 +59,20 @@ export function updateTaskTitle(req, res, id, body) {
   task.title = parsed.title;
   res.writeHead(200, { "Content-Type": "application/json" });
   res.end(JSON.stringify(task));
+}
+
+export function deleteTask(req, res, id) {
+  const taskId = Number(id);
+  if (!Number.isInteger(taskId)) {
+    return sendError(res, 400, "invalid_id", "task id must be an integer");
+  }
+
+  if (!store.remove(taskId)) {
+    return sendError(res, 404, "not_found", "no task with that id");
+  }
+
+  res.writeHead(204);
+  res.end();
 }
 
 function sendError(res, status, code, message) {
