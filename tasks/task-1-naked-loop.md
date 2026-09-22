@@ -20,7 +20,7 @@
 
    ```bash
    git add -A
-   git commit -m "task 1: naked loop"
+   git commit -m "task 1: naked loop 2"
    git tag task-1
    ```
 

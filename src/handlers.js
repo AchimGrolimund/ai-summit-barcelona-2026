@@ -24,3 +24,26 @@ export function completeTask(req, res, id) {
   res.writeHead(200, { "Content-Type": "application/json" });
   res.end(JSON.stringify(task));
 }
+
+export function updateTaskTitle(req, res, id, body) {
+  let title;
+  try {
+    title = JSON.parse(body).title;
+  } catch {
+    return reply(res, 400, { error: "invalid JSON" });
+  }
+  if (typeof title !== "string" || title.trim() === "" || title.length > MAX) {
+    return reply(res, 400, { error: "title must be 1-" + MAX + " characters" });
+  }
+  const task = store.find(Number(id));
+  if (!task) {
+    return reply(res, 404, { error: "not found" });
+  }
+  task.title = title;
+  reply(res, 200, task);
+}
+
+function reply(res, status, data) {
+  res.writeHead(status, { "Content-Type": "application/json" });
+  res.end(JSON.stringify(data));
+}
